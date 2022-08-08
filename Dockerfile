@@ -9,6 +9,7 @@ ARG CACHEBUST=1
 RUN mkdir -p /workspace/src && \
     cd /workspace/src && \
     git clone https://github.com/gazebosim/gz-cmake -b mjcarroll/test_exact && \
+    cp ./gz-cmake/examples/find_ogre2/ogre     . -R && \
     cp ./gz-cmake/examples/find_ogre2/ogre-2   . -R && \
     cp ./gz-cmake/examples/find_ogre2/ogre-2.1 . -R && \
     cp ./gz-cmake/examples/find_ogre2/ogre-2.2 . -R && \
